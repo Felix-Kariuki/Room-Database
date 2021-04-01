@@ -11,8 +11,8 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.flexcode.roomdatabase.R
-import com.flexcode.roomdatabase.data.User
-import com.flexcode.roomdatabase.data.UserViewModel
+import com.flexcode.roomdatabase.Model.User
+import com.flexcode.roomdatabase.ViewModel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
 

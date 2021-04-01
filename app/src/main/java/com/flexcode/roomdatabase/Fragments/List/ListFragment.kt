@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.flexcode.roomdatabase.R
-import com.flexcode.roomdatabase.data.UserViewModel
+import com.flexcode.roomdatabase.ViewModel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_list.view.*
 
 

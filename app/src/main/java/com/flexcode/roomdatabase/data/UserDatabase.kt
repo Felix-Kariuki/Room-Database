@@ -5,6 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.flexcode.roomdatabase.Dao.UserDao
+import com.flexcode.roomdatabase.Model.User
 
 /* Contains the db holder and serves as the main access point for the underlying connection
 * to your apps persisted, relational data*/
@@ -19,7 +20,7 @@ abstract class UserDatabase: RoomDatabase() {
         private var INSTANCE: UserDatabase? = null
 
         //get database fun
-        fun  getDatabase(context: Context): UserDatabase{
+        fun  getDatabase(context: Context): UserDatabase {
             val tempInstance = INSTANCE
             if (tempInstance != null){
                 return tempInstance
