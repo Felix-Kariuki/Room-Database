@@ -1,4 +1,4 @@
-package com.flexcode.roomdatabase.Fragments.List
+package com.flexcode.roomdatabase.fragments.list
 
 import android.view.LayoutInflater
 import android.view.View
@@ -36,7 +36,7 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
 
         holder.itemView.rowLayout.setOnClickListener {
             val action = ListFragmentDirections.actionListFragmentToUpdateFragment(currentItem)
-            //holder.itemView.findNavController().navigate(action)
+            holder.itemView.findNavController().navigate(action)
         }
     }
     fun setData(User: List<User>){

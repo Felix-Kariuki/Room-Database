@@ -1,7 +1,7 @@
 package com.flexcode.roomdatabase.repository
 
 import androidx.lifecycle.LiveData
-import com.flexcode.roomdatabase.Dao.UserDao
+import com.flexcode.roomdatabase.dao.UserDao
 import com.flexcode.roomdatabase.Model.User
 
 

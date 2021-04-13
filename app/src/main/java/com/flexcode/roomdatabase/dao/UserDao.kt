@@ -1,4 +1,4 @@
-package com.flexcode.roomdatabase.Dao
+package com.flexcode.roomdatabase.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*

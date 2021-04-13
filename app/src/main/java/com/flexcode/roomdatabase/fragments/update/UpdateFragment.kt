@@ -1,4 +1,4 @@
-package com.flexcode.roomdatabase.Fragments.Update
+package com.flexcode.roomdatabase.fragments.update
 
 import android.os.Bundle
 import android.text.Editable
@@ -8,13 +8,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.flexcode.roomdatabase.Model.User
 import com.flexcode.roomdatabase.R
-import com.flexcode.roomdatabase.ViewModel.UserViewModel
+import com.flexcode.roomdatabase.viewModel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_update.*
 import kotlinx.android.synthetic.main.fragment_update.view.*
 
@@ -34,9 +33,9 @@ class UpdateFragment : Fragment() {
 
         view.etUpdateFirstName.setText(args.currentUser.FirstName)
         view.etUpdateLastName.setText(args.currentUser.lastName)
-        view.etUpdateAge.setText(args.currentUser.age)
+        view.etUpdateAge.setText(args.currentUser.age.toString())
 
-        view.setOnClickListener {
+        view.btnUpdateAdd.setOnClickListener {
             updateItem()
         }
 
@@ -47,6 +46,7 @@ class UpdateFragment : Fragment() {
     private fun updateItem() {
        val firstName = etUpdateFirstName.text.toString()
        val lastName = etUpdateLastName.text.toString()
+        val age = etUpdateAge.text
 
         if (inputCheck(firstName, lastName, age)){
             //create user Object
@@ -63,7 +63,7 @@ class UpdateFragment : Fragment() {
     }
 
     //inputs function to check if empty
-    private fun inputCheck(firstName: String, lastName: String, age: Editable?): Boolean {
+    private fun inputCheck(firstName: String, lastName: String, age: Editable): Boolean {
         return !(TextUtils.isEmpty(firstName) && TextUtils.isEmpty(lastName) && age?.isEmpty() == true)
 
     }

@@ -1,4 +1,4 @@
-package com.flexcode.roomdatabase.Fragments.Add
+package com.flexcode.roomdatabase.fragments.add
 
 import android.os.Bundle
 import android.text.Editable
@@ -12,7 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.flexcode.roomdatabase.R
 import com.flexcode.roomdatabase.Model.User
-import com.flexcode.roomdatabase.ViewModel.UserViewModel
+import com.flexcode.roomdatabase.viewModel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
 

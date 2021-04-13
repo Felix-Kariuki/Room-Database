@@ -1,4 +1,4 @@
-package com.flexcode.roomdatabase.Fragments.List
+package com.flexcode.roomdatabase.fragments.list
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.flexcode.roomdatabase.R
-import com.flexcode.roomdatabase.ViewModel.UserViewModel
+import com.flexcode.roomdatabase.viewModel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_list.view.*
 
 

@@ -1,4 +1,4 @@
-package com.flexcode.roomdatabase.ViewModel
+package com.flexcode.roomdatabase.viewModel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -25,7 +25,7 @@ class UserViewModel(application: Application): AndroidViewModel(application) {
         readAllData = repository.readAllData
     }
 
-    //add fun using coroutines viewmodelscope IO
+    //add fun using coroutines viewModelScope IO
     fun addUser(user: User){
         viewModelScope.launch(Dispatchers.IO){
             repository.addUser(user)
