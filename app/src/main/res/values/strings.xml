@@ -7,4 +7,6 @@
     <string name="lastname">LastName</string>
     <string name="age">Age</string>
     <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="removed">\"Successfully removed: \"</string>
 </resources>
